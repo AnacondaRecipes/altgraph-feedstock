@@ -33,7 +33,7 @@ test:
   commands:
     - pip check
     - python -c "from importlib.metadata import version; assert(version('{{ name }}')=='{{ version }}')"
-    - pytest -ra -vv --tb=short --pyargs altgraph_tests
+    - pytest -ra -vv --tb=short altgraph_tests
   requires:
     - pip
     - pytest
